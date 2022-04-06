@@ -1,10 +1,12 @@
 :root {
-  --white-color: rgb(255, 255, 255);
+  --black-color: #000000;
+  --white-color: #ffffff;
   --dark-color: #212121;
   --blue-color: #2196f3;
   --background-dark-color: #2f303a;
   --grey-color: #757575;
   --light-grey: #f5f4fa;
+  --dark-semi-transparent: rgba(255, 255, 255, 0.6);
 }
 
 * {
@@ -18,6 +20,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 10px;
+  color: var(--grey-color);
 }
 
 a {
@@ -33,13 +36,13 @@ h2 {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--dark-color);
 }
 
 /* ----------- header start -------------- */
 
 header {
   height: 80px;
-  /* border: 1px solid black; */
   border-bottom: 1px solid #ececec;
 }
 
@@ -125,13 +128,14 @@ h1 {
   margin: 0 auto;
   letter-spacing: 0.06em;
   line-height: 1.36;
+  font-weight: 900;
 }
 
 .order-btn {
   margin-top: 30px;
   background-color: var(--blue-color);
   padding: 10px 31px;
-  border: 0px solid black;
+  border: 0px solid transparent;
   border-radius: 4px;
   font-weight: 700;
   color: var(--white-color);
@@ -166,6 +170,7 @@ h1 {
   text-transform: uppercase;
   margin-bottom: 10px;
   letter-spacing: 0.03em;
+  color: var(--dark-color);
 }
 
 .advantages-list p {
@@ -175,6 +180,7 @@ h1 {
   color: var(--grey-color);
   letter-spacing: 0.03em;
   line-height: 1.71;
+  font-weight: 400;
 }
 /* -----------advantages-section end-----------*/
 
@@ -229,12 +235,14 @@ h1 {
   letter-spacing: 0.03em;
   margin-top: 30px;
   margin-bottom: 10px;
+  color: var(--dark-color);
 }
 
 .employee-card-figure span {
   color: var(--grey-color);
   font-size: 1.6em;
   letter-spacing: 0.03em;
+  font-weight: 400;
 }
 
 /* -----------our-team end-----------*/
@@ -259,7 +267,7 @@ address {
 }
 
 a.footer__a {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--dark-semi-transparent);
   font-style: normal;
   font-size: 14px;
   display: block;
@@ -299,12 +307,12 @@ a.footer__a:hover {
 .portfolio-filter__btn {
   background-color: var(--light-grey);
   padding: 6px 22px;
-  border: 0px solid black;
+  border: 0px solid transparent;
   border-radius: 4px;
-  font-weight: 700;
-  color: black;
+  font-weight: 500;
+  color: var(--dark-color);
   cursor: pointer;
-  font-size: 1.5em;
+  font-size: 1.6em;
   line-height: 1.62;
   letter-spacing: 0.03em;
   transition: 0.3s;
@@ -312,7 +320,7 @@ a.footer__a:hover {
 
 .portfolio-filter__btn:hover {
   background-color: var(--blue-color);
-  color: white;
+  color: var(--white-color);
 }
 
 .portfolio-list {
@@ -343,6 +351,7 @@ a.footer__a:hover {
   margin-bottom: 0px;
   padding-left: 25px;
   padding-bottom: 5px;
+  color: var(--dark-color);
 }
 
 .portfolio-list-card__descr {
@@ -354,4 +363,4 @@ a.footer__a:hover {
   color: var(--grey-color);
   padding-left: 25px;
 }
-/* -----------footer end-----------*/
+/* -----------portfolio end-----------*/
