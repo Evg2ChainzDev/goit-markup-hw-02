@@ -316,6 +316,7 @@ a.footer__a:hover {
   line-height: 1.62;
   letter-spacing: 0.03em;
   transition: 0.3s;
+  font-family: "Roboto", sans-serif;
 }
 
 .portfolio-filter__btn:hover {
